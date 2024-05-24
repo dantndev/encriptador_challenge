@@ -23,7 +23,7 @@
             </figure>
             <ul class="ul-container">
                 <li class="nav-li"><a class="nav-li-link" href="#about-section">ACERCA DE</a></li>
-                <li class="nav-li"><a class="nav-li-link" href="https://github.com/dantndev/encriptador_challenge">REPOSITORIO</a></li>
+                <li class="nav-li"><a class="nav-li-link" href="https://github.com/dantndev/encriptador_challenge.git">REPOSITORIO</a></li>
                 <li class="nav-li"><a class="nav-li-link" href="#contact-section">CONTACTO</a></li>
             </ul>
             <div class="nav-social-container">
@@ -37,6 +37,27 @@
             </div>
         </nav>
     </header>
-    
+    <main>
+        <section id="encriptador-area">
+            <div class="input-container">
+                <textarea id="input-area" name="input-area" rows="10" cols="20" placeholder="¡Escribe tu mensaje aquí!"></textarea>
+                <div class="input-btns">
+                    <button class="encriptar-btn both-btns" onclick="encriptarTexto()" role="button">Encriptar</button>
+                    <button class="desencriptar-btn both-btns" onclick="desencriptarTexto()" role="button">Desencriptar</button>
+                </div>
+                <div class="copiar-btn-container">
+                    <button class="copiar-btn" onclick="copiarTexto()" role="button">Copiar</button>    
+                </div>
+            </div>
+            <div class="output-container">
+                <p id="output-text">
+                    Lee tu mensaje aquí
+                </p>
+                <div class="copiar-btn-container2">
+                    <button class="copiar-btn2" onclick="copiarTextoOutput()" role="button">Copiar</button>    
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
