@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    background: var(--Light-blue-light-blue-100, #F3F5FC);
+}
+
+/* NAV SECTION */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 70rem;
+    padding: 2.5rem 0;
+   /*border: 1px solid;*/
+}
+
+.nav-logo-container, .ul-container, .nav-social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-container {
+    list-style: none;
+}
+
+
+.nav-logo {
+    height: 3rem;
+    width: 7.5rem;
+}
+
+.nav-li {
+    margin: 0 1.25rem;
+}
+
+.nav-li:hover {
+    transform: translateY(-1px);
+}
+
+.nav-li:active {
+    transform: translateY(1px);
+}
+
+.nav-li-link {
+    text-decoration: none;
+    color: #0A3871;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.nav-li-link:hover {
+    color: rgb(94, 94, 94);
+}
+
+.bxl-linkedin-square {
+    font-size: 2.5rem;
+    color: #0077B5;
+    margin-right: 0.5rem;
+}
+
+.bxl-github {
+    margin-left:0 0.5rem;
+    margin-right: 3rem;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.bxl-github:hover, .bxl-linkedin-square:hover {
+    transform: translateY(-1px);
+}
+
+.hamburger-menu i {
+    font-size: 2.5rem;
+    margin-right: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.hamburger-menu i:active {
+    transform: scale(0.9);
+    transform: translateY(0.9);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* NAV SECTION END*/
+
+
+
+@media (max-width: 768px) {
+    .ul-container, .nav-social-container {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+
+}
