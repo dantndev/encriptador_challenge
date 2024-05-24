@@ -15,7 +15,7 @@ function encriptarTexto() {
 
         document.getElementById('output-text').textContent = encryptedText;
     } else {
-        document.getElementById('output-text').textContent = '¡ERROR, Solo se permiten letras minúsculas!';
+        document.getElementById('output-text').textContent = '¡ERROR!, Solo se permiten letras minúsculas.';
     }
 }
 
@@ -36,8 +36,7 @@ function desencriptarTexto() {
         document.getElementById('output-text').textContent = decryptedText;
         document.getElementById('output-text').style.color = 'black'; 
     } else {
-        document.getElementById('output-text').textContent = '¡ERROR, Solo se permiten letras minúsculas y espacios en blanco!';
-        document.getElementById('output-text').style.color = 'red'; 
+        document.getElementById('output-text').textContent = '¡ERROR!, Solo se permiten letras minúsculas.';
     }
 }
 
