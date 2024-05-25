@@ -184,6 +184,12 @@ main {
     margin-right: 0.5rem;
 }
 
+.encriptar-btn:hover {
+    background: none;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
 .desencriptar-btn {
     color: #0A3871;
     border: 1px solid #0A3871;
@@ -239,6 +245,14 @@ main {
     background: none;
 }
 
+.copiar-btn2:hover, .copiar-btn:hover, .desencriptar-btn:hover {
+    background-color: rgba(164, 164, 164, 0.3);
+}
+
+.copiar-btn2:active, .copiar-btn:active, .encriptar-btn:active, .desencriptar-btn:active {
+    transform: translateY(1px);
+}
+
 .output-container {
     flex-direction: column;
     height: 56.25rem;
@@ -273,7 +287,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 3rem 0;
+        margin: 2rem 0;
 }
 
 .nav-li-footer {
@@ -286,11 +300,8 @@ main {
 }
 
 @media (max-width: 768px) {
-    .ul-container, .nav-social-container {
+    .ul-container {
         display: none;
-    }
-    .hamburger-menu {
-        display: block;
     }
     #encriptador-area {
         flex-direction: column;
